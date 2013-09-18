@@ -6,3 +6,26 @@ Comparison Operators:
      var1 != 4 or var2 != "3"
 3. Strict equal (===)	Returns true if the operands are equal and of the same type. 
       3 === var1
+
+4. <script> alert(); </script>  O/P: You will get undefined error. Even you forget to give semicolon.
+   <script> alert(1"); </script>  O/P: You will get UNEXPECTED token ILLEGAL.
+   <script> alert(''); </script>   O/P: You will get empty dialog box. (either it will be empty or null).
+   
+   If you include the above script tags, in between the <html></html>, it is taking so much time to load. 850ms.
+   But if you include after </html> tag in your page, it loads faster with 301ms.
+   
+5. Writing to the document output from JS
+   <script>
+     document.write("<p>My First JavaScript</p>");  // The example writes a <p> element directly into the HTML document
+   </script>
+   
+6. <script>
+       document.getElementByID("myDiv").innerHTML="How are you?";
+   </script>
+    O/P: Object #<HTMLDocument> has no method 'getElementByID', so make sure that you are using correct method 'getElementById'.
+ 
+ 7. Re-Declaring JavaScript Variables.
+     The value of the variable carname will still have the value "Volvo" after the execution of the following two statements:
+       var carname="Volvo"; 
+       var carname;
+
