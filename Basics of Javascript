@@ -6,3 +6,19 @@ Comparison Operators:
      var1 != 4 or var2 != "3"
 3. Strict equal (===)	Returns true if the operands are equal and of the same type. 
       3 === var1
+4. TODO" tags should be handled
+     TODO tags are commonly used to mark places where some more code is required, but which the developer wants to implement later.
+     function doSomething() {
+       // TODO
+     }
+5. "FIXME" tags should be handled
+     FIXME tags are commonly used to mark places where a bug is suspected, but which the developer wants to deal with later.
+     Sometimes the developer will not have the time or will simply forget to get back to that tag. This rule is meant to track those tags, and ensure that they do not go unnoticed.
+     function divide(numerator, denominator) {
+          return numerator / denominator;              // FIXME denominator value might be  0
+     }
+6. Trailing commas should not be used
+     var settings = {
+    'foo'  : oof,
+    'bar' : rab,    // Noncompliant - trailing comma
+};
